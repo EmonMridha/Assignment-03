@@ -152,10 +152,12 @@ header{
     display: flex;
     justify-content: center;
     background-color: rgb(253, 245, 246);
+    margin-bottom: 100px;
 }
 
 .box-containers{
     display: flex;
+    gap: 25px;
 }
 
 .second-title{
@@ -169,9 +171,11 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+
 .dog-p{
-    font-size: 1.6rem;
-    columns: gray;
+    font-size: 1.3rem;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .shop{
@@ -186,6 +190,102 @@ header{
     background-color: #F9DF8A;
     padding: 40px;
     border-radius: 10px;
+    background-image: url(../c1-assets/cute-pet-small.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    height: 400px;
+}
+
+.right-boxes{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: white;
+    padding:16px;
+    padding-right: 100px;
+    border-radius: 10px;
+}
+
+.price{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ratings{
+    display: inline;
+    
+}
+
+.dog{
+    padding: 10px;
+    background-color: rgb(253, 245, 246);
+    border-radius: 10px;
+}
+
+.right-box-title{
+    display: block;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.right-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+/* third-sec design */
+
+.third-sec-title{
+    font-size: 2.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.third-sec-container{
+    display: flex;
+    justify-content: center;
+}
+
+.left-one{
+    display: flex;
+    align-items: center;
+    background:linear-gradient(to right, rgb(154, 137, 137), rgb(239, 203, 203));
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.dog-q{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left-one-title{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.white-text{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-one-pirce{
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.left-one-img img{
+width: 100%;
+}
+
+.box-holder{
+    display: flex;
+    gap: 25px;
 }
 @media screen and (max-width:576px){
     .nav-left p, .login-reg, .links{
@@ -199,6 +299,8 @@ header{
     }
     nav{
         justify-content: space-between;
+        border-bottom: 1px solid black;
+        padding-bottom: 30px;
     }
 
     /* category sec style */
@@ -209,5 +311,14 @@ header{
     }
     .cat-sec-cont-title{
         margin-left: 0px;
+    }
+    .box-containers{
+        flex-direction: column;
+    }
+    .right-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .left-box{
+        width: 77%;
     }
 }
