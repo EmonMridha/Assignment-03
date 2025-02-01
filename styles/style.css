@@ -246,6 +246,7 @@ header{
 .third-sec-container{
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .left-one{
@@ -254,6 +255,7 @@ header{
     background:linear-gradient(to right, rgb(154, 137, 137), rgb(239, 203, 203));
     padding: 50px;
     border-radius: 10px;
+    height: 480px;
 }
 
 .dog-q{
@@ -286,6 +288,32 @@ width: 100%;
 .box-holder{
     display: flex;
     gap: 25px;
+}
+
+.right-one{
+    display: flex;
+    background:linear-gradient(to right , rgb(177, 171, 171) , rgb(129, 129, 66));
+    padding: 50px;
+    border-radius: 10px;
+    height: 480px;
+    align-items: center;
+}
+
+.right-one-img img{
+    width: 100%;
+}
+
+.right-one-title{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.right-one-price{
+    font-size:3.5rem ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: yellow;
 }
 @media screen and (max-width:576px){
     .nav-left p, .login-reg, .links{
@@ -320,5 +348,8 @@ width: 100%;
     }
     .left-box{
         width: 77%;
+    }
+    .box-holder{
+        flex-direction: column;
     }
 }
