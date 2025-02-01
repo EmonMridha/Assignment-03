@@ -315,6 +315,40 @@ width: 100%;
     font-weight: bold;
     color: yellow;
 }
+
+/* fourth sec design */
+.fourth-sec-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.fourth-sec-content{
+    display: flex;
+    gap:100px;
+    background-color: #d6a8a8;
+    align-items: center;
+    padding: 50px;
+    border-radius: 10px;
+}
+.last-title{
+    font-size: 2.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.last-p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+
+}
+input{
+    display: block;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    width: 300px;
+}
 @media screen and (max-width:576px){
     .nav-left p, .login-reg, .links{
         display: none;
@@ -352,4 +386,9 @@ width: 100%;
     .box-holder{
         flex-direction: column;
     }
+    .fourth-sec-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
