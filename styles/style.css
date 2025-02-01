@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+.nav-left{
+    display: flex;
+    gap: 10px;
+}
+.nav-left img{
+    width: 48px;
+    height: 48px;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+.nav-left p{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.lists{
+    list-style-type: none;
+}
+.as{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+.log-btn{
+    font-size: 1.2rem;
+    padding:10px 30px; 
+    border: 2px solid yellow;
+    background-color: white;
+    border-radius: 8px;
+}
+.reg-btn{
+    font-size:1.2rem;
+    font-weight: bold;
+    background-color:yellow;
+    padding:10px 30px;
+    border: none;
+    border-radius: 8px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFF9F4;
+    margin-bottom: 100px;
+}
+
+.nav-right{
+    display: flex;
+    gap:80px;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.login-reg{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.banner-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.banner-p{
+    font-size: 1.6rem;
+    color: gray;
+}
+.banner-btn{
+    background-color: rgb(250, 192, 85);
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:10px 30px;
+    border: none;
+    border-radius: 8px;
+}
+.banner{
+    background-image: url("../c1-assets/cat-big.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 85%;
+    height: 800px;
+}
+header{
+    margin-bottom: 100px;
+}
+/* category option design */
+
+.cat-sec-cont-title{
+    margin-left: 200px;
+    font-size: 2.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.cat-sec-cont{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.category-section{
+    display: flex;
+    gap: 24px;
+}
+
+.imgdivcont{
+    display: flex;
+    justify-content: center;
+}
+
+.img-div{
+    background-color: white;
+    padding: 10px;
+    width: 30%;
+    border-radius: 100%;
+}
+
+.cat-boxes{
+    background-color: #F9DF8A;
+    text-align: center;
+    width: 230px;
+    height: 250px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+.cat-title{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.cat-p{
+    font-size: 1rem;
+}
+
+/* second section */
+.main-second-section{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(253, 245, 246);
+}
+
+.box-containers{
+    display: flex;
+}
+
+.second-title{
+    font-size:2.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.dog-title{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.dog-p{
+    font-size: 1.6rem;
+    columns: gray;
+}
+
+.shop{
+    background-color: white;
+    border: none;
+    padding:10px 30px;
+    font-size: 1.7rem;
+    border-radius: 10px;
+}
+
+.left-box{
+    background-color: #F9DF8A;
+    padding: 40px;
+    border-radius: 10px;
+}
+@media screen and (max-width:576px){
+    .nav-left p, .login-reg, .links{
+        display: none;
+    }
+    .hamburg{
+        width: 30px;
+        height: 2px;
+        background-color: black;
+        margin-bottom: 5px;
+    }
+    nav{
+        justify-content: space-between;
+    }
+
+    /* category sec style */
+
+    .category-section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .cat-sec-cont-title{
+        margin-left: 0px;
+    }
+}
