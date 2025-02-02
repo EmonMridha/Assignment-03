@@ -394,6 +394,17 @@ a{
     font-family: Arial, Helvetica, sans-serif;
     color: gray;
 }
+.logo-sec{
+    display: flex;
+    gap: 10px;
+}
+
+.logo{
+    background-color: black;
+    color: orange;
+    padding: 3px 8px;
+    border-radius: 50%;
+}
 @media screen and (max-width:576px){
     .nav-left p, .login-reg, .links{
         display: none;
@@ -441,9 +452,5 @@ a{
     .footer-content{
         flex-direction: column;
         gap: 10px;
-    }
-    .footer-content{
-        height: 1000px;
-        margin-top: 100px;
     }
 }
